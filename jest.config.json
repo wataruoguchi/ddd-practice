@@ -1,0 +1,10 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "coverageThreshold": {
+    "global": {
+      "lines": 80
+    }
+  },
+  "detectOpenHandles": true
+}

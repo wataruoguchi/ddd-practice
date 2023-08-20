@@ -1,0 +1,25 @@
+{
+  "name": "ddd-practice",
+  "version": "1.0.0",
+  "description": "DDD practice",
+  "keywords": [
+    "DDD"
+  ],
+  "author": "Wataru Oguchi",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:fp": "npm i -w fp",
+    "install:oop": "npm i -w oop",
+    "install": "run-p install:*",
+    "start:fp": "npm run start -w fp",
+    "start:oop": "npm run start -w oop",
+    "start": "run-p start:*",
+    "test": "npm run test -w fp -w oop"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

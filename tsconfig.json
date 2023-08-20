@@ -1,0 +1,36 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    // Type Checking - https://www.typescriptlang.org/tsconfig#Type_Checking_6248
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Modules - https://www.typescriptlang.org/tsconfig#Modules_6179
+    "rootDir": "./src",
+    "types": ["node", "jest"],
+    "allowImportingTsExtensions": true,
+
+    "noEmit": true,
+
+    // JavaScript Support - https://www.typescriptlang.org/tsconfig#JavaScript_Support_6194
+    "allowJs": false,
+    "checkJs": false,
+
+    // Emit - https://www.typescriptlang.org/tsconfig#Emit_6174
+    "declaration": true,
+    "outDir": "./dist",
+
+    // Interop Constraints - https://www.typescriptlang.org/tsconfig#Interop_Constraints_6176
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts"]
+}
